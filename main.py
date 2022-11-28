@@ -52,7 +52,7 @@ while True:
                 if len(my_list) > 0:
                     skip_append = True
                     popped = my_list.pop()
-                    print(f"\nYou just REMOVED:\n{popped}")
+                    print(f"\n** You just REMOVED:\n{popped}")
                     # Re-write to file
                     file.close()
                     file = open(f"csv/{list_name}.csv", "w")
@@ -82,4 +82,5 @@ while True:
     print(my_list)
 
 # Goodbye
-print("\n\n\t~~ Goodbye! ~~\n\n")
+print("\n\n\t\t\t\t ~~ Goodbye! ~~\n\n")
+print(f"** A file named '{list_name}.csv' containing your list was created for you in the ./csv/ directory :) **\n")
